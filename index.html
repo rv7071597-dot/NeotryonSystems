@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MX ELECTRIC, somos una empresa que presta servicio eléctrico privado">
+  <meta name="author" content="Rodrigo Enrique Pichilingue Vaverde">
+  <meta name="keywords" content="MX ELECTRIC, electricidad, instalaciones, mantenimiento">
+  <title>MX ELECTRIC</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('dist/image/Fondo Pagina web.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background-color: rgba(79, 186, 236, 0.9);
+      padding: 10px 0;
+      color: white;
+    }
+
+    .logo {
+      height: 100px;
+      width: auto;
+    }
+
+    .nav-buttons button {
+      margin-left: 10px;
+      padding: 8px 12px;
+      background-color: white;
+      color: #08778C;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .header-table {
+      width: 100%;
+    }
+
+    .seccion {
+      display: none;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0);
+      color: #333;
+      height: 100%;
+    }
+
+    .seccion.visible {
+      display: block;
+    }
+
+    .seccion h2 {
+      color: #08778C;
+      margin-bottom: 20px;
+    }
+
+    .seccion p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .videos-proyectos {
+  width: 90%;               
+  margin: 0 auto;           
+  display: flex;
+  justify-content: space-between; 
+  gap: 40px;               
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.videos-proyectos iframe {
+  flex: 1 1 30%;           
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.formulario-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+  }
+
+  .formulario-box h3 {
+    margin-bottom: 20px;
+    color: #08778C;
+    text-align: center;
+  }
+
+  .formulario-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .formulario-box input,
+  .formulario-box select,
+  .formulario-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .formulario-box .grupo {
+    margin-top: 15px;
+  }
+
+  .formulario-box .grupo input[type="radio"],
+  .formulario-box .grupo input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  .formulario-box .boton {
+    margin-top: 25px;
+    background-color: #08778C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .formulario-box .boton:hover {
+    background-color: #0aa0b5;
+  }
+  .boton-cotizar {
+  display: inline-block;
+  background-color: #08778C;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-cotizar:hover {
+  background-color: #0aa0b5;
+}
+.fila-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 60px;
+  gap: 60px;
+  box-sizing: border-box;
+}
+
+.bloque-contacto {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+.qr img {
+  width: 100%;
+  max-width: 175px;
+  height: auto;
+  margin: 0 auto 15px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.qr figcaption {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.formulario-box {
+  max-width: 600px;         
+  margin-left: auto;           
+  margin-right: auto;       
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <table class="header-table">
+      <tr>
+        <td width="10%" align="center">
+          <a href="#inicio" onclick="mostrarSeccion('inicio')">
+            <img src="dist/image/LOGO MX ELECTRIC.jfif" alt="Logo MX ELECTRIC" class="logo">
+          </a>
+        </td>
+        <td width="30%" align="center">
+          <h2>
+            <font color="white">MX ELECTRIC</font>
+          </h2>
+        </td>
+        <td width="60%" align="right" class="nav-buttons">
+          <button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
+          <button onclick="mostrarSeccion('nosotros')">🏰 Nosotros</button>
+          <button onclick="mostrarSeccion('servicios')">🔧 Servicios</button>
+          <button onclick="mostrarSeccion('proyectos')">🏗️ Proyectos</button>
+          <button onclick="mostrarSeccion('contacto')">📞 Contacto</button>
+          <button onclick="mostrarSeccion('blog')">📰 Comentarios</button>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <section id="inicio" class="seccion visible">
+    <h2>🏠 Inicio</h2>
+    <p>Bienvenido a MX ELECTRIC tu solución en instalaciones eléctricas.</p>
+     <figure>
+            <img width="100%" src="dist/image/inicio.jpg" alt="Producto 1" />
+        
+          </figure>
+  </section>
+
+  <section id="nosotros" class="seccion">
+    <h2>🏰 ¿Quiénes Somos?</h2>
+    <p>MX ELECTRIC es una empresa dedicada al préstamo de servicios eléctricos privados, con más de 10 años de
+      trayectoria al servicio del cliente.</p>
+
+    <h2>🎯 Misión y Visión</h2>
+    <p>Buscamos expandir nuestros horizontes a nivel internacional para llegar con nuestros servicios a más clientes.
+    </p>
+
+    <h2>💡 Valores</h2>
+    <p>Nos identificamos por la entrega correcta de nuestros servicios, <strong>SEGURIDAD</strong> y
+      <strong>GARANTÍA</strong>.</p>
+      
+      <figure>
+            <img width="30%" style="margin-left:65%" src="dist/image/LOGO MX ELECTRIC.jfif" alt="Producto 1" />
+        
+          </figure>
+      
+  </section>
+
+  <section id="servicios" class="seccion">
+    <h2>🔧 Servicios</h2>
+    <table width="100%" cellspacing="20px">
+      <tr>
+        <td width="5%"></td>
+
+        <td width="15%" bgcolor="#ffffff">
+          <figure>
+            <img width="100%" src="dist/image/dommiciliario.jpg" alt="Producto 1" />
+            <figcaption>
+              <h3>Instalaciones Eléctricas</h3>
+              <p>Una instalación eléctrica es el conjunto de elementos y sistemas diseñados para distribuir la energía eléctrica desde el punto de suministro hasta los equipos o receptores dentro de una edificación.</p>
+          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar">Solicitar Cotización</a>
+            </figcaption>
+          </figure>
+        </td>
+        <td width="15%" bgcolor="#ffffff">
+          <figure>
+            <img width="70%" style="margin-left:15%" src="dist/image/mediciones.jpg" alt="Producto 1" />
+            <figcaption>
+              <h3>Mantenimiento General Eléctrico</h3>
+              <p>Destinadas a preservar, restaurar y optimizar el funcionamiento de instalaciones, equipos y sistemas eléctricos, garantizar la seguridad, continuidad operativa y eficiencia energética, tanto en entornos residenciales como industriales.</p>
+              <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar">Solicitar Cotización</a>
+            </figcaption>
+          </figure>
+        </td>
+       
+        <td width="15%" bgcolor="#ffffff">
+          <figure>
+            <img width="100%"  src="dist/image/indstria.jpg" alt="Producto 1" />
+            <figcaption>
+              <h3>Instalaciones Eléctricas en Industrias</h3>
+              <p>SIstemas estratégicos diseñados para distribuir energía de forma segura y eficiente en entornos de alta demanda, integrando acometidas, transformadores, tableros, cableado especializado y automatización, con el objetivo de garantizar continuidad operativa, protección de activos y adaptabilidad técnica.</p>
+           <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar">Solicitar Cotización</a>
+            </figcaption>
+          </figure>
+        </td>
+        <td width="15%" bgcolor="#ffffff">
+          <figure>
+            <img width="100%"  src="dist/image/gestion de procesos.jpg" alt="Producto 1" />
+            <figcaption>
+              <h3>Automatización de Procesos </h3>
+              <p>La automatización de procesos eléctricos es la implementación de sistemas inteligentes que controlan tareas eléctricas de forma automática, mejorando la eficiencia, seguridad y precisión operativa sin intervención humana constante.</p>
+             <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar">Solicitar Cotización</a>
+            </figcaption>
+          </figure>
+        </td>
+        <td width="15%" bgcolor="#ffffff">
+          <figure>
+            <img width="100%"  src="dist/image/Energias renovables.jpg" alt="Producto 1" />
+            <figcaption>
+              <h3>Energías Renovables</h3>
+              <p>Las energías renovables son aquellas que se obtienen de fuentes naturales capaces de regenerarse constantemente, como el sol, el viento, el agua, la biomasa y el calor interno de la Tierra.</p>
+             <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar">Solicitar Cotización</a>
+            </figcaption>
+          </figure>
+        </td>
+        <td width="5%"></td>
+      </tr>
+    </table>
+  </section>
+<section id="proyectos" class="seccion">
+  <h2>🏗️ Proyectos</h2>
+  <p>Conoce nuestros trabajos realizados en viviendas, industrias y comercios.</p>
+
+  <div class="videos-proyectos">
+    <iframe src="https://www.youtube.com/embed/DR07kHChp6c"
+      title="Video 1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/M3q1UnSmvUc"
+      title="Video 3"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/XF-fr_gnXs8"
+      title="Video 2"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="contacto" class="seccion">
+  <h2>📞 Contacto</h2>
+  <p>Contáctanos para cotizaciones, consultas o soporte técnico.</p>
+
+  <div class="fila-contacto">
+    <!-- Mapa -->
+    <div class="bloque-contacto mapa">
+      <figure>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.23456789!2d-77.123456!3d-11.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sSanta+Mar%C3%ADa%2C+Huacho%2C+Lima!5e0!3m2!1ses!2spe!4v1699999999999"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <figcaption>
+          <h3>Ubícanos</h3>
+          <p>Nuestra Sede: Santa María - Huaura - Lima</p>
+          <a href="https://maps.app.goo.gl/a2nAKUSJHYSSPEtP6" target="_blank">
+            <button>Ver en Google Maps</button>
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- QR -->
+    <div class="bloque-contacto qr">
+      <figure>
+        <img src="dist/image/QR.jpg" alt="Código QR MV ELECTRIC" />
+        <figcaption>
+          <h3>MV ELECTRIC</h3>
+          <p>Tu solución en instalaciones eléctricas.</p>
+          <h4>📆 Atención</h4>
+          <p>24 horas | 7 días a la semana | 365 días al año</p>
+          <p><strong style="color: green;">✅ Servicio de Emergencias</strong></p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+ <div class="bloque-contacto redes">
+  <figure>
+    <figcaption>
+      <h3>📱 Contactos</h3>
+      <p><strong>Números de Celular:</strong></p>
+      <ul>
+        <li>📞 +51 946 663 623</li>
+        <li>📞 +51 923 112 864</li>
+      </ul>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/message/IOTAZ3DZA3GVH1" target="_blank">Enviar mensaje</a></p>
+      <p><strong>Facebook:</strong> <a href="#" target="_blank">Visítanos en Facebook</a></p>
+      <p><strong>Correo:</strong> <a href="mailto:rv7071597@gmai.com">rv7071597@gmai.com</a></p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</section>
+
+  <section id="blog" class="seccion">
+    <h2>📰 Comentarios</h2>
+
+    <div class="formulario-box">
+  <h3>Registro de Usuario</h3>
+  <form>
+    <label>Nombres *</label>
+   <input type="text" name="nombres" required>
+
+    <label>Apellidos *</label>
+   <input type="text" name="apellidos" required>
+
+    <label>Tipo de Documento</label>
+    <select name="tipo_documento">
+      <option>DNI</option>
+      <option>Pasaporte</option>
+      <option>Carné de extranjería</option>
+    </select>
+
+    <label>Número de Documento *</label>
+    <input type="text" name="numero_documento" required>
+
+    <label>Fecha Nacimiento *</label>
+   <input type="date" name="fecha_nacimiento" required>
+
+    <label>Correo electrónico *</label>
+  <input type="email" name="correo" required>
+
+    <label>Teléfono *</label>
+    <input type="tel" name="telefono" required>
+    <div class="grupo">
+      <label>Género *</label>
+      <input type="radio" name="genero" value="masculino" required>
+    </div>
+
+    <div class="grupo">
+      <label>Idioma *</label>
+      <input type="checkbox" name="idioma" value="es"> Español
+      <input type="checkbox" name="idioma" value="fr"> Francés
+      <input type="checkbox" name="idioma" value="en"> Inglés
+    </div>
+
+    <label>Comentario</label>
+    <textarea name="comentario" rows="4" placeholder="Escriba los comentarios aquí..."></textarea>
+
+    <button type="submit" class="boton">Grabar</button>
+  </form>
+</div>
+  </section>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.remove('visible'));
+      document.getElementById(id).classList.add('visible');
+    }
+  </script>
+
+</body>
+
+</html>
