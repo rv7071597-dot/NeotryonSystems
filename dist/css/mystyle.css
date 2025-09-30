@@ -1,0 +1,285 @@
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('../Image/Fondo Pagina web.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+  }
+
+  .imagen-inicio {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  /* ---------- HEADER ---------- */
+  header {
+      background-color: rgba(79, 186, 236, 0.9);
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  header h2 {
+      margin: 0;
+      font-size: 1.5rem;
+  }
+
+  .logo {
+      height: 80px;
+      width: auto;
+  }
+
+  .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .nav-buttons button {
+      padding: 8px 12px;
+      background-color: white;
+      color: #08778C;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+
+  .nav-buttons button:hover {
+      background-color: #f0f0f0;
+  }
+
+  /* ---------- SECCIONES ---------- */
+  .seccion {
+      display: none;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0);
+      color: #333;
+  }
+
+  .seccion.visible {
+      display: block;
+  }
+
+  .seccion h2 {
+      color: #08778C;
+      margin-bottom: 20px;
+  }
+
+  .seccion p {
+      font-size: 18px;
+      line-height: 1.6;
+  }
+
+  /* ---------- SERVICIOS ---------- */
+  .grid-servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+  }
+
+  /* Asegura mínimo 2 columnas en pantallas pequeñas */
+  @media (max-width: 600px) {
+      .grid-servicios {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  .grid-servicios figure {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .grid-servicios img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .grid-servicios figcaption {
+      padding: 15px;
+      text-align: center;
+  }
+
+  .boton-cotizar {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+  }
+
+  .boton-cotizar:hover {
+      background-color: #0056b3;
+  }
+
+
+  /* ---------- VIDEOS PROYECTOS ---------- */
+  .videos-proyectos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+  }
+
+  .videos-proyectos iframe {
+      width: 100%;
+      height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ---------- CONTACTO ---------- */
+  .fila-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+  }
+
+  .bloque-contacto {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+  }
+
+  .mapa iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+  }
+
+  .qr img {
+      width: 100%;
+      max-width: 175px;
+      margin: 0 auto 15px auto;
+      display: block;
+      border-radius: 8px;
+  }
+
+  .qr figcaption {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 8px;
+      color: #333;
+  }
+
+  /* ---------- FORMULARIO ---------- */
+  .formulario-box {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .formulario-box h3 {
+      margin-bottom: 20px;
+      color: #08778C;
+      text-align: center;
+  }
+
+  .formulario-box label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+  }
+
+  .formulario-box input,
+  .formulario-box select,
+  .formulario-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+  }
+
+  .formulario-box .grupo {
+      margin-top: 15px;
+  }
+
+  .formulario-box .grupo input[type="radio"],
+  .formulario-box .grupo input[type="checkbox"] {
+      margin-right: 8px;
+  }
+
+  .formulario-box .boton {
+      margin-top: 25px;
+      background-color: #08778C;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      font-size: 16px;
+  }
+
+  .formulario-box .boton:hover {
+      background-color: #0aa0b5;
+  }
+
+  /* ---------- MEDIA QUERIES ---------- */
+  @media (max-width: 768px) {
+      header {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .nav-buttons {
+          justify-content: center;
+      }
+
+      header h2 {
+          font-size: 1.2rem;
+      }
+
+      .logo {
+          height: 70px;
+      }
+
+      .mapa iframe {
+          height: 250px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      body {
+          font-size: 14px;
+      }
+
+      .formulario-box {
+          padding: 15px;
+      }
+
+      .videos-proyectos iframe {
+          height: 180px;
+      }
+  }
