@@ -31,9 +31,19 @@
   <section id="inicio" class="seccion visible">
     <h2>🏠 Inicio</h2>
     <p>Bienvenido a MX ELECTRIC tu solución en instalaciones eléctricas.</p>
-    <figure style="width: 80%; margin: 0 auto;">
-      <img width="100%" src="dist/Image/inicio.jpg" alt="Inicio" />
-    </figure>
+    
+    <div class="carousel">
+  <div class="carousel-item visible">
+    <img src="dist/Image/LOGO MX ELECTRIC.jfif" alt="Imagen 1">
+  </div>
+  <div class="carousel-item">
+    <img src="dist/Image/estructurado.jpg" alt="Imagen 2">
+  </div>
+  <div class="carousel-item">
+    <img src="dist/Image/Energias renovables.jpg" alt="Imagen 3">
+  </div>
+</div>
+
   </section>
 
   <!-- NOSOTROS -->
@@ -237,14 +247,21 @@
     </div>
   </section>
 
-  <script>
-    function mostrarSeccion(id) {
-      const secciones = document.querySelectorAll('.seccion');
-      secciones.forEach(sec => sec.classList.remove('visible'));
-      document.getElementById(id).classList.add('visible');
-    }
-  </script>
+  <!-- BOTONES FLOTANTES -->
+<div class="floating-buttons">
+  <a href="tel:923940353" class="btn-call" title="Llamar">
+    <img src="dist/Image/iconphone.jpg" alt="Llamar">
+  </a>
 
+  <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="btn-wsp" title="WhatsApp" target="_blank">
+    <img src="dist/Image/iconwhatsap.jpg" alt="WhatsApp">
+  </a>
+
+  <a href="https://web.facebook.com/profile.php?id=61581472640430" class="btn-fb" title="Facebook" target="_blank">
+    <img src="dist/Image/iconfacebook.png" alt="Facebook">
+  </a>
+</div>
+<script src="dist/js/scripts.js"></script>
 </body>
 
 </html>
