@@ -18,9 +18,15 @@
     </a>
     <h2>Neotryon Systems</h2>
     <div class="nav-buttons">
+      <button class="btn-musica" id="btnMusica">
+  🎵
+</button>
+
+<audio id="musicaFondo" src="dist/Audio/WhatsApp Audio 2025-10-26 at 02.24.33.mpeg" loop></audio>
+
       <button onclick="mostrarSeccion('inicio')">Inicio</button>
       <button onclick="mostrarSeccion('nosotros')">Nosotros</button>
-       <button onclick="mostrarSeccion('proyectos')">Proyectos</button>
+      <button onclick="mostrarSeccion('proyectos')">Proyectos</button>
       <button onclick="mostrarSeccion('servicios')">Servicios</button>
       <button onclick="mostrarSeccion('contacto')">Contacto</button>
       <button onclick="mostrarSeccion('Comentarios')">Comentarios</button>
@@ -28,23 +34,17 @@
   </header>
 
   <!-- INICIO -->
-  <section id="inicio" class="seccion visible">
-    <h2>Inicio</h2>
-    <p>Bienvenido a Neotryon Systems tu solución en instalaciones eléctricas.</p>
-    
-    <div class="carousel">
-  <div class="carousel-item visible">
-    <img src="dist/Image/LOGO MX ELECTRIC.jfif" alt="Imagen 1">
-  </div>
-  <div class="carousel-item">
-    <img src="dist/Image/estructurado.jpg" alt="Imagen 2">
-  </div>
-  <div class="carousel-item">
-    <img src="dist/Image/Energias renovables.jpg" alt="Imagen 3">
-  </div>
-</div>
+  <section id="inicio" class="seccion visible inicio-fondo">
+  <h2>Inicio</h2>
+  <p>Neotryon Systems tu solución en instalaciones eléctricas.</p>
 
-  </section>
+  <div class="carousel-fondo">
+    <div class="slide" style="background-image: url('dist/Image/LOGO MX ELECTRIC.jfif');"></div>
+    <div class="slide" style="background-image: url('dist/Image/estructurado.jpg');"></div>
+    <div class="slide" style="background-image: url('dist/Image/Energias renovables.jpg');"></div>
+  </div>
+</section>
+
 
   <!-- NOSOTROS -->
   <section id="nosotros" class="seccion">
@@ -108,7 +108,7 @@
         <figcaption>
           <h3>Instalaciones Eléctricas</h3>
           <p>Distribución de energía desde el suministro hasta los equipos dentro de una edificación.</p>
-          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
+          <a href="https://wa.me/51923940353" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
         </figcaption>
       </figure>
       <figure>
@@ -116,7 +116,7 @@
         <figcaption>
           <h3>Mantenimiento General</h3>
           <p>Preservación, restauración y optimización de sistemas eléctricos en hogares e industrias.</p>
-          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
+          <a href="https://wa.me/51923940353" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
         </figcaption>
       </figure>
       <figure>
@@ -124,7 +124,7 @@
         <figcaption>
           <h3>Instalaciones Industriales</h3>
           <p>Sistemas de alta demanda diseñados para seguridad, eficiencia y continuidad operativa.</p>
-          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
+          <a href="https://wa.me/51923940353" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
         </figcaption>
       </figure>
       <figure>
@@ -132,7 +132,7 @@
         <figcaption>
           <h3>Automatización de Procesos</h3>
           <p>Sistemas inteligentes que controlan tareas eléctricas automáticamente con eficiencia y seguridad.</p>
-          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
+          <a href="https://wa.me/51923940353" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
         </figcaption>
       </figure>
       <figure>
@@ -140,7 +140,7 @@
         <figcaption>
           <h3>Energías Renovables</h3>
           <p>Soluciones con energía solar, eólica e hídrica para un futuro sostenible.</p>
-          <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
+          <a href="https://wa.me/51923940353" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
         </figcaption>
       </figure>
     </div>
@@ -185,7 +185,7 @@
       </div>
       <div class="bloque-contacto qr">
         <figure>
-          <img src="dist/Image/QR.jpg" alt="Código QR MV ELECTRIC" />
+          <img src="dist/Image/NEO.jfif" alt="Código QR Neotryon" />
           <figcaption>
             <h3>Neotryon Systems</h3>
             <p>Tu solución en instalaciones eléctricas.</p>
@@ -199,10 +199,10 @@
     <div class="bloque-contacto redes">
       <h3>📱 Contactos</h3>
       <ul>
-        <li>📞 +51 946 663 623</li>
+        <li>📞 +51 923 940 353</li>
         <li>📞 +51 923 112 864</li>
       </ul>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/message/IOTAZ3DZA3GVH1" target="_blank">Enviar mensaje</a>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/51923940353" target="_blank">Enviar mensaje</a>
       </p>
       <p><strong>Facebook:</strong> <a href="https://web.facebook.com/profile.php?id=61581472640430"
           target="_blank">Visítanos</a></p>
@@ -259,7 +259,7 @@
     <img src="dist/Image/iconphone.jpg" alt="Llamar">
   </a>
 
-  <a href="https://wa.me/message/IOTAZ3DZA3GVH1" class="btn-wsp" title="WhatsApp" target="_blank">
+  <a href="https://wa.me/51923940353" class="btn-wsp" title="WhatsApp" target="_blank">
     <img src="dist/Image/iconwhatsap.jpg" alt="WhatsApp">
   </a>
 

@@ -23,4 +23,18 @@ function mostrarSlideAutomatico() {
 /* Tiempo: cada 4 segundos (puedes cambiarlo) */
 setInterval(mostrarSlideAutomatico, 4000);
 
-    
+// --- Control de música ---
+const musica = document.getElementById("musicaFondo");
+const btnMusica = document.getElementById("btnMusica");
+
+musica.volume = 0.25; // volumen suave
+
+btnMusica.addEventListener("click", () => {
+  if (musica.paused) {
+    musica.play();
+    btnMusica.textContent = "⏸"; // cambia a pausa
+  } else {
+    musica.pause();
+    btnMusica.textContent = "🎵"; // vuelve a icono música
+  }
+});
