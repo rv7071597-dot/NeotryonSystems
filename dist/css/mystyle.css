@@ -194,10 +194,50 @@
 
   .videos-proyectos iframe {
       width: 100%;
-      height: 500px;
+      height: 350px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
+  /* --- HOVER PROYECTOS con efecto LASER AZUL --- */
+.videos-proyectos figure {
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.9);
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videos-proyectos figure:hover {
+  transform: scale(1) translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.6); /* sombra luminosa azul */
+  cursor: pointer;
+}
+
+/* LÍNEA LASER ANIMADA AZUL */
+.videos-proyectos figure::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,150,255,1), transparent);
+  transform: translateX(-100%);
+  animation: laserLinea 1s linear infinite;
+  opacity: 0;
+}
+
+.videos-proyectos figure:hover::before {
+  opacity: 1;
+}
+
+@keyframes laserLinea {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
 
   /* ---------- CONTACTO ---------- */
   .fila-contacto {
