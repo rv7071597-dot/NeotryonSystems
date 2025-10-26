@@ -24,17 +24,15 @@ function mostrarSlideAutomatico() {
 setInterval(mostrarSlideAutomatico, 4000);
 
 // --- Control de música ---
-const musica = document.getElementById("musicaFondo");
-const btnMusica = document.getElementById("btnMusica");
+const btnMusica = document.getElementById('btnMusica');
+const musicaFondo = document.getElementById('musicaFondo');
 
-musica.volume = 0.25; // volumen suave
-
-btnMusica.addEventListener("click", () => {
-  if (musica.paused) {
-    musica.play();
-    btnMusica.textContent = "⏸"; // cambia a pausa
+btnMusica.addEventListener('click', () => {
+  if (musicaFondo.paused) {
+    musicaFondo.play();
+    btnMusica.textContent = '🔊'; // cambia icono si quieres
   } else {
-    musica.pause();
-    btnMusica.textContent = "🎵"; // vuelve a icono música
+    musicaFondo.pause();
+    btnMusica.textContent = '🎵';
   }
 });
