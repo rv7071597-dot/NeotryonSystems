@@ -84,6 +84,7 @@
   border-radius: 10px;
 }
 
+
   /* ---------- SECCIONES ---------- */
   .seccion {
       display: none;
@@ -207,7 +208,8 @@
   transform: scale(0.9);
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 0 rgba(0,0,0,0); /* sin sombra inicial */
-  border-radius: 10px;box-shadow 0.3 ease;
+  border-radius: 10px;
+  box-shadow: (0.3);
 }
 
 .videos-proyectos figure:hover {
@@ -435,12 +437,19 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: slideShow 15s infinite ease-in-out;
+  animation: slideShow 45s infinite ease-in-out;
 }
 
 .carousel-fondo .slide:nth-child(1) { animation-delay: 0s; }
-.carousel-fondo .slide:nth-child(2) { animation-delay: 5s; }
-.carousel-fondo .slide:nth-child(3) { animation-delay: 10s; }
+.carousel-fondo .slide:nth-child(2) { animation-delay: 10s; }
+.carousel-fondo .slide:nth-child(3) { animation-delay: 15s; }
+.carousel-fondo .slide:nth-child(4) { animation-delay: 20s; }
+.carousel-fondo .slide:nth-child(5) { animation-delay: 25s; }
+.carousel-fondo .slide:nth-child(6) { animation-delay: 30s; }
+.carousel-fondo .slide:nth-child(7) { animation-delay: 35s; }
+.carousel-fondo .slide:nth-child(8) { animation-delay: 40s; }
+.carousel-fondo .slide:nth-child(9) { animation-delay: 45s; }
+.carousel-fondo .slide:nth-child(10) { animation-delay: 45s; }
 
 @keyframes slideShow {
   0% {opacity: 0;}
@@ -448,29 +457,6 @@
   33% {opacity: 1;}
   43% {opacity: 0;}
   100% {opacity: 0;}
-}
-
-/* --- BOTÓN MÚSICA --- */
-.btn-musica {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(6px);
-  border: 2px solid #00aaff;
-  color: white;
-  font-size: 22px;
-  cursor: pointer;
-  z-index: 9999;
-  transition: 0.3s;
-}
-
-.btn-musica:hover {
-  transform: scale(1.1);
-  background: rgba(0, 0, 0, 0.8);
 }
 
 
