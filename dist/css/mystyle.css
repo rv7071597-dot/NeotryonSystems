@@ -197,38 +197,10 @@
       width: 100%;
       height: 350px;
       border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0, 150, 255, 0.6); /* sombra luminosa azul */
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.6); /* sombra luminosa azul */
   }
 
-/* Estilo para los bloques de videos PROYECTOS */
-.videos-proyectos figure {
-  position: relative;
-  overflow: hidden;
-  opacity: 1; /* NO TRANSPARENTE */
-  transform: scale(0.9);
-  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 0 rgba(0,0,0,0); /* sin sombra inicial */
-  border-radius: 10px;
-  box-shadow: (0.3);
-}
 
-.videos-proyectos figure:hover {
-  transform: scale(1) translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.6); /* sombra luminosa azul */
-  cursor: pointer;
-}
-
-/* Efecto de brillo PROYECTOS */
-.videos-proyectos figure:hover::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.6); /* sombra luminosa azul */
-  opacity: 0;
-  animation: brilloProyectos 0.6s ease forwards;
-}
 
 @keyframes brilloProyectos {
   0% { opacity: 0; }
@@ -464,13 +436,7 @@
   border-radius: 10px;
 }
 
-/* Efecto al pasar el mouse (igual que videos) */
-.formulario-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
+
 
 .recuadro-blanco {
   background-color: white;
